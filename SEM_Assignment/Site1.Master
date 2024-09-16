@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="SEM_Assignment.Site1" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><%: Page.Title %> - FOCS</title>
+    <!-- Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="bg-gray-100">
+    <form id="form1" runat="server">
+        <!-- Navbar -->
+        <nav class="fixed top-0 left-0 right-0 z-10 bg-white shadow-md">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <div class="flex items-center">
+                        <asp:HyperLink ID="LinkLogo" runat="server" NavigateUrl="~/Home.aspx" CssClass="flex-shrink-0">
+                            <asp:Image ID="Image1" runat="server" ImageUrl="~/Image/TARUMT_Logo.png" AlternateText="FOCS Logo" CssClass="h-12 w-40" />
+                        </asp:HyperLink>
+                    </div>
+
+                    <div class="hidden sm:flex sm:items-center">
+                        <asp:HyperLink ID="LinkHome" runat="server" NavigateUrl="~/Home.aspx" CssClass="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Home</asp:HyperLink>
+                        <asp:HyperLink ID="LinkAbout" runat="server" NavigateUrl="~/About.aspx" CssClass="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">About Us</asp:HyperLink>
+                        <asp:HyperLink ID="LinkProgrammes" runat="server" NavigateUrl="~/Programmes.aspx" CssClass="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Programmes</asp:HyperLink>
+                        <asp:HyperLink ID="LinkResearch" runat="server" NavigateUrl="~/Research.aspx" CssClass="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Research</asp:HyperLink>
+                        <asp:HyperLink ID="LinkContact" runat="server" NavigateUrl="~/Contact.aspx" CssClass="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Contact Us</asp:HyperLink>
+
+                        <!-- Search Bar -->
+                        <div class="ml-4 flex items-center">
+                            <asp:TextBox ID="SearchBox" runat="server" CssClass="border-gray-300 rounded-md h-10" placeholder="Search..." />
+                            <asp:Button ID="SearchButton" runat="server" Text="Search" CssClass="bg-blue-500 text-white px-4 py-2 rounded-md text-sm font-medium h-10" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Content Placeholder -->
+        <div class ="p-20">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 py-6">
+            <div class="max-w-7xl mx-auto text-center text-white">
+                <p>&copy; 2024 Faculty of Computing and Information Technology, TARUMT. All rights reserved.</p>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>
