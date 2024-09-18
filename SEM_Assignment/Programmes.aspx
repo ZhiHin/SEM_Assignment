@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Programmes.aspx.cs" Inherits="SEM_Assignment.Programmes" %>
+﻿<%@ Page Title="Programmes" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Programmes.aspx.cs" Inherits="SEM_Assignment.Programmes" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <!-- Add styles in the head section -->
