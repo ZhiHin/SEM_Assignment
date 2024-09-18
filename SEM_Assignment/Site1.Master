@@ -25,7 +25,7 @@
                         <asp:HyperLink ID="LinkHome" runat="server" NavigateUrl="~/Home.aspx" CssClass="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Home</asp:HyperLink>
                         <asp:HyperLink ID="LinkAbout" runat="server" NavigateUrl="~/About.aspx" CssClass="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">About Us</asp:HyperLink>
                         <asp:HyperLink ID="LinkProgrammes" runat="server" NavigateUrl="~/Programmes.aspx" CssClass="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Programmes</asp:HyperLink>
-                        <asp:HyperLink ID="LinkResearch" runat="server" NavigateUrl="~/Research.aspx" CssClass="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Research</asp:HyperLink>
+                        <asp:HyperLink ID="LinkAppointment" runat="server" NavigateUrl="~/Appointment.aspx" CssClass="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Appointment</asp:HyperLink>
                         <asp:HyperLink ID="LinkContact" runat="server" NavigateUrl="~/Contact.aspx" CssClass="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Contact Us</asp:HyperLink>
 
                         <!-- Search Bar -->
@@ -50,6 +50,32 @@
                 <p>&copy; 2024 Faculty of Computing and Information Technology, TARUMT. All rights reserved.</p>
             </div>
         </footer>
+
+         <!-- Chat Button -->
+        <div id="chat-button" class="fixed bottom-5 right-5 z-50">
+            <button onclick="openChat()" class="bg-blue-500 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-600">
+                💬 Chat
+            </button>
+        </div>
+
+        <!-- Optional Chat Interface -->
+        <div id="chatbox" style="display: none;" class="fixed bottom-16 right-5 bg-white shadow-lg rounded-lg p-4 z-50">
+            <!-- Chat interface content goes here -->
+            <p>Chat with us!</p>
+            <button onclick="closeChat()" class="mt-2 bg-red-500 text-white px-3 py-1 rounded">Close</button>
+        </div>
+
+        <script>
+            function openChat() {
+                const chatbox = document.getElementById('chatbox');
+                chatbox.style.display = 'block'; // Show the chatbox
+            }
+
+            function closeChat() {
+                const chatbox = document.getElementById('chatbox');
+                chatbox.style.display = 'none'; // Hide the chatbox
+            }
+        </script>
     </form>
 </body>
 </html>
