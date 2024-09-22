@@ -187,6 +187,7 @@ namespace SEM_Assignment
                 CreateGoogleCalendarEvent(appointmentId, ddlTimeSlots.SelectedValue);
 
                 lblMessage.Text = "Appointment booked successfully!";
+                lblMessage.CssClass = "text-green-500"; // Change to green for success
 
                 // Clear session values after booking
                 Session.Remove("UserName");
@@ -250,8 +251,8 @@ namespace SEM_Assignment
                 // Create event details
                 Event newEvent = new Event()
                 {
-                    Summary = $"Appointment with Advisor {ddlAdvisor.SelectedItem.Text}",
-                    Location = "University Office",
+                    Summary = $"TARUMT Appointment with Advisor {ddlAdvisor.SelectedItem.Text}",
+                    Location = "Online - Google Meet",
                     Description = $"Appointment ID: {appointmentId}\nBooked by: {txtName.Text}\nEmail: {txtEmail.Text}",
                     Start = new EventDateTime()
                     {
@@ -263,13 +264,24 @@ namespace SEM_Assignment
                         DateTimeDateTimeOffset = endDateTime,
                         TimeZone = "Asia/Kuala_Lumpur",
                     },
+                    ConferenceData = new ConferenceData
+                    {
+                        CreateRequest = new CreateConferenceRequest
+                        {
+                            RequestId = appointmentId, // Use appointment ID for request uniqueness
+                            ConferenceSolutionKey = new ConferenceSolutionKey
+                            {
+                                Type = "hangoutsMeet"
+                            }
+                        }
+                    },
                     Reminders = new Event.RemindersData()
                     {
                         UseDefault = false,
                         Overrides = new EventReminder[] {
-                    new EventReminder() { Method = "email", Minutes = 10 },
-                    new EventReminder() { Method = "popup", Minutes = 10 },
-                }
+                         new EventReminder() { Method = "email", Minutes = 10 },
+                         new EventReminder() { Method = "popup", Minutes = 10 },
+                         }
                     }
                 };
 
@@ -277,7 +289,33 @@ namespace SEM_Assignment
                 String calendarId = "primary";
                 EventsResource.InsertRequest request = service.Events.Insert(newEvent, calendarId);
                 System.Diagnostics.Debug.WriteLine("Attempting to create calendar event.");
-                request.Execute();
+                request.ConferenceDataVersion = 1; // This is required to include Google Meet data
+                //request.Execute();
+                Event createdEvent = request.Execute();
+
+                // Store GoogleEventID in your database or session
+                // Example: Store in the database (you'll need a new column for GoogleEventID in your Appointments table)
+                using (var conn = new SqlConnection(connectionString))
+                {
+                    conn.Open();
+                    SqlCommand updateCmd = new SqlCommand("UPDATE Appointments SET GoogleEventID = @GoogleEventID WHERE AppointmentID = @AppointmentID", conn);
+                    updateCmd.Parameters.AddWithValue("@GoogleEventID", createdEvent.Id); // Get the GoogleEventID
+                    updateCmd.Parameters.AddWithValue("@AppointmentID", appointmentId);
+                    updateCmd.ExecuteNonQuery();
+                }
+
+                // Optionally, show the Google Meet URL
+                if (createdEvent.ConferenceData?.EntryPoints != null)
+                {
+                    foreach (var entryPoint in createdEvent.ConferenceData.EntryPoints)
+                    {
+                        if (entryPoint.EntryPointType == "video")
+                        {
+                            lblMessage.Text += $" Google Meet URL: {entryPoint.Uri}";
+                        }
+                    }
+                }
+
                 System.Diagnostics.Debug.WriteLine("Event created successfully.");
             }
             catch (Exception ex)
@@ -373,6 +411,12 @@ namespace SEM_Assignment
         {
             // Generate a unique appointment ID (you can customize this logic)
             return Guid.NewGuid().ToString();
+        }
+
+        protected void btnCancel_Click(object sender, EventArgs e)
+        {
+            // Redirect to the CancelAppointment.aspx page
+            Response.Redirect("~/CancelAppointment.aspx");
         }
     }
 }

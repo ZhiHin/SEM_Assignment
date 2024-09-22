@@ -100,6 +100,7 @@
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Content Include="CancelAppointment.aspx" />
     <Content Include="ComparePrograms.aspx" />
     <Content Include="FeesCalculator.aspx" />
     <Content Include="Home.aspx" />
@@ -116,6 +117,13 @@
     </Compile>
     <Compile Include="Appointment.aspx.designer.cs">
       <DependentUpon>Appointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CancelAppointment.aspx.cs">
+      <DependentUpon>CancelAppointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CancelAppointment.aspx.designer.cs">
+      <DependentUpon>CancelAppointment.aspx</DependentUpon>
     </Compile>
     <Compile Include="ComparePrograms.aspx.cs">
       <DependentUpon>ComparePrograms.aspx</DependentUpon>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="FeesCalculator.aspx.cs" Inherits="SEM_Assignment.FeesCalculator" %>
+﻿<%@ Page Title="Fees Calculator" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="FeesCalculator.aspx.cs" Inherits="SEM_Assignment.FeesCalculator" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />

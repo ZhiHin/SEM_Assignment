@@ -40,6 +40,7 @@
         </div>
 
         <asp:Button ID="btnBook" runat="server" Text="Book Appointment" CssClass="bg-blue-500 text-white px-4 py-2 rounded-md" OnClick="btnBook_Click" />
+        <asp:Button ID="btnCancel" runat="server" Text="Cancel Appointment" CssClass="bg-blue-500 text-white px-4 py-2 rounded-md" OnClick="btnCancel_Click" />
     </div>
 
     <script type="text/javascript">
