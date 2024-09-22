@@ -26,6 +26,7 @@
                         <asp:HyperLink ID="LinkAbout" runat="server" NavigateUrl="~/About.aspx" CssClass="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">About Us</asp:HyperLink>
                         <asp:HyperLink ID="LinkProgrammes" runat="server" NavigateUrl="~/Programmes.aspx" CssClass="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Programmes</asp:HyperLink>
                         <asp:HyperLink ID="LinkAppointment" runat="server" NavigateUrl="~/Appointment.aspx" CssClass="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Appointment</asp:HyperLink>
+                        <asp:HyperLink ID="LinkMap" runat="server" NavigateUrl="~/interactiveVirtualTour.aspx" CssClass="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Virtual Tour</asp:HyperLink>
                         <asp:HyperLink ID="LinkContact" runat="server" NavigateUrl="~/Contact.aspx" CssClass="text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Contact Us</asp:HyperLink>
 
                         <!-- Search Bar -->
