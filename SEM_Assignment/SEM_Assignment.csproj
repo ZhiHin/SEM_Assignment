@@ -103,6 +103,7 @@
     <Content Include="ComparePrograms.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Image\TARUMT_Logo.png" />
+    <Content Include="interactiveVirtualTour.aspx" />
     <Content Include="ProgramDetails.aspx" />
     <Content Include="Programmes.aspx" />
     <Content Include="Web.config" />
@@ -128,6 +129,13 @@
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="interactiveVirtualTour.aspx.cs">
+      <DependentUpon>interactiveVirtualTour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="interactiveVirtualTour.aspx.designer.cs">
+      <DependentUpon>interactiveVirtualTour.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProgramDetails.aspx.cs">
       <DependentUpon>ProgramDetails.aspx</DependentUpon>
