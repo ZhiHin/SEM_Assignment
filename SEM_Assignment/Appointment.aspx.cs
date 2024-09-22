@@ -106,7 +106,12 @@ namespace SEM_Assignment
                 // Log to verify the inputs
                 System.Diagnostics.Debug.WriteLine($"Loading slots for FacultyID: {facultyId}, AdvisorID: {advisorId}");
 
-                SqlCommand cmd = new SqlCommand("SELECT SlotID, StartDateTime, EndDateTime FROM AvailableSlots WHERE FacultyID = @FacultyID AND AdvisorID = @AdvisorID AND IsBooked = 0", conn);
+                //SqlCommand cmd = new SqlCommand("SELECT SlotID, StartDateTime, EndDateTime FROM AvailableSlots WHERE FacultyID = @FacultyID AND AdvisorID = @AdvisorID AND IsBooked = 0", conn);
+                SqlCommand cmd = new SqlCommand(
+                    "SELECT SlotID, StartDateTime, EndDateTime FROM AvailableSlots " +
+                    "WHERE FacultyID = @FacultyID AND AdvisorID = @AdvisorID AND IsBooked = 0 " +
+                    "ORDER BY StartDateTime", // Order by StartDateTime
+                     conn);
                 cmd.Parameters.AddWithValue("@FacultyID", facultyId);
                 cmd.Parameters.AddWithValue("@AdvisorID", advisorId);
 

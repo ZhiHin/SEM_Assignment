@@ -17,6 +17,10 @@
             <p><strong>Career Opportunities:</strong> <asp:Label ID="lblOriginalCareerOpportunities" runat="server"></asp:Label></p>
             <p><strong>Entry Requirements:</strong> <asp:Label ID="lblOriginalEntryRequirements" runat="server"></asp:Label></p>
             <p><strong>Tuition Fees:</strong> RM <asp:Label ID="lblOriginalTuitionFees" runat="server"></asp:Label></p>
+            <p><strong>Additional Fees:</strong> RM <asp:Label ID="lblOriginalAdditionalFees" runat="server"></asp:Label></p>
+            <p><strong>Total Estimated Cost:</strong> RM <asp:Label ID="lblOriginalTotalEstimatedCost" runat="server"></asp:Label></p>
+            <p><strong>Mode of Study:</strong> <asp:Label ID="lblOriginalModeOfStudy" runat="server"></asp:Label></p>
+            <p><strong>Accreditation:</strong> <asp:Label ID="lblOriginalAccreditation" runat="server"></asp:Label></p>
         </div>
 
         <!-- Comparison Program Selection -->
@@ -33,6 +37,10 @@
                 <p><strong>Career Opportunities:</strong> <asp:Label ID="lblComparisonCareerOpportunities" runat="server"></asp:Label></p>
                 <p><strong>Entry Requirements:</strong> <asp:Label ID="lblComparisonEntryRequirements" runat="server"></asp:Label></p>
                 <p><strong>Tuition Fees:</strong> RM <asp:Label ID="lblComparisonTuitionFees" runat="server"></asp:Label></p>
+                <p><strong>Additional Fees:</strong> RM <asp:Label ID="lblComparisonAdditionalFees" runat="server"></asp:Label></p>
+                <p><strong>Total Estimated Cost:</strong> RM <asp:Label ID="lblComparisonTotalEstimatedCost" runat="server"></asp:Label></p>
+                <p><strong>Mode of Study:</strong> <asp:Label ID="lblComparisonModeOfStudy" runat="server"></asp:Label></p>
+                <p><strong>Accreditation:</strong> <asp:Label ID="lblComparisonAccreditation" runat="server"></asp:Label></p>
             </div>
         </div>
     </div>

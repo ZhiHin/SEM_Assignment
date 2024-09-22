@@ -78,6 +78,42 @@ namespace SEM_Assignment
         protected global::System.Web.UI.WebControls.Label lblOriginalTuitionFees;
 
         /// <summary>
+        /// lblOriginalAdditionalFees control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblOriginalAdditionalFees;
+
+        /// <summary>
+        /// lblOriginalTotalEstimatedCost control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblOriginalTotalEstimatedCost;
+
+        /// <summary>
+        /// lblOriginalModeOfStudy control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblOriginalModeOfStudy;
+
+        /// <summary>
+        /// lblOriginalAccreditation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblOriginalAccreditation;
+
+        /// <summary>
         /// ddlComparisonPrograms control.
         /// </summary>
         /// <remarks>
@@ -148,6 +184,42 @@ namespace SEM_Assignment
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblComparisonTuitionFees;
+
+        /// <summary>
+        /// lblComparisonAdditionalFees control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblComparisonAdditionalFees;
+
+        /// <summary>
+        /// lblComparisonTotalEstimatedCost control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblComparisonTotalEstimatedCost;
+
+        /// <summary>
+        /// lblComparisonModeOfStudy control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblComparisonModeOfStudy;
+
+        /// <summary>
+        /// lblComparisonAccreditation control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblComparisonAccreditation;
 
         /// <summary>
         /// btnCompareSelected control.

@@ -16,6 +16,10 @@
         <p><strong>Career Opportunities:</strong> <asp:Label ID="lblCareerOpportunities" runat="server"></asp:Label></p>
         <p><strong>Entry Requirements:</strong> <asp:Label ID="lblEntryRequirements" runat="server"></asp:Label></p>
         <p><strong>Tuition Fees:</strong> RM <asp:Label ID="lblTuitionFees" runat="server"></asp:Label></p>
+        <p><strong>Additional Fees:</strong> RM <asp:Label ID="lblAdditionalFees" runat="server"></asp:Label></p>
+        <p><strong>Total Estimated Cost:</strong> RM <asp:Label ID="lblTotalEstimatedCost" runat="server"></asp:Label></p>
+        <p><strong>Mode of Study:</strong> <asp:Label ID="lblModeOfStudy" runat="server"></asp:Label></p>
+        <p><strong>Accreditation:</strong> <asp:Label ID="lblAccreditation" runat="server"></asp:Label></p>
 
         <!-- Option to compare this program with others -->
         <div class="mt-6 text-center">
