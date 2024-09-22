@@ -52,20 +52,6 @@
             </div>
         </footer>
 
-         <!-- Chat Button -->
-        <div id="chat-button" class="fixed bottom-5 right-5 z-50">
-            <button onclick="openChat()" class="bg-blue-500 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-600">
-                💬 Chat
-            </button>
-        </div>
-
-        <!-- Optional Chat Interface -->
-        <div id="chatbox" style="display: none;" class="fixed bottom-16 right-5 bg-white shadow-lg rounded-lg p-4 z-50">
-            <!-- Chat interface content goes here -->
-            <p>Chat with us!</p>
-            <button onclick="closeChat()" class="mt-2 bg-red-500 text-white px-3 py-1 rounded">Close</button>
-        </div>
-
         <script>
             function openChat() {
                 const chatbox = document.getElementById('chatbox');
@@ -77,6 +63,22 @@
                 chatbox.style.display = 'none'; // Hide the chatbox
             }
         </script>
+
+        <script>
+            window.difyChatbotConfig = {
+                token: 'CJuje7Dyfl0B3fl6'
+            }
+        </script>
+        <script
+            src="https://udify.app/embed.min.js"
+            id="CJuje7Dyfl0B3fl6"
+            defer>
+        </script>
+        <style>
+            #dify-chatbot-bubble-button {
+                background-color: #ff9b30 !important;
+            }
+        </style>
     </form>
 </body>
 </html>
