@@ -53,18 +53,6 @@
         </footer>
 
         <script>
-            function openChat() {
-                const chatbox = document.getElementById('chatbox');
-                chatbox.style.display = 'block'; // Show the chatbox
-            }
-
-            function closeChat() {
-                const chatbox = document.getElementById('chatbox');
-                chatbox.style.display = 'none'; // Hide the chatbox
-            }
-        </script>
-
-        <script>
             window.difyChatbotConfig = {
                 token: 'CJuje7Dyfl0B3fl6'
             }
