@@ -87,6 +87,15 @@ namespace SEM_Assignment
         protected global::System.Web.UI.WebControls.HyperLink LinkAppointment;
 
         /// <summary>
+        /// LinkMap control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink LinkMap;
+
+        /// <summary>
         /// LinkContact control.
         /// </summary>
         /// <remarks>

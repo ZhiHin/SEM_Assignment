@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Site1.master" AutoEventWireup="true" CodeBehind="interactiveVirtualTour.aspx.cs" Inherits="SEM_Assignment.interactiveVirtualTour" %>
+﻿<%@ Page Title="Virtual Tour" Language="C#" MasterPageFile="~/Site1.master" AutoEventWireup="true" CodeBehind="interactiveVirtualTour.aspx.cs" Inherits="SEM_Assignment.interactiveVirtualTour" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!-- Hero Section -->
