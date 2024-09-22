@@ -11,80 +11,62 @@ namespace SEM_Assignment
 {
 
 
-    public partial class ProgramDetails
+    public partial class FeesCalculator
     {
 
         /// <summary>
-        /// lblProgramName control.
+        /// txtCourse control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblProgramName;
+        protected global::System.Web.UI.WebControls.TextBox txtCourse;
 
         /// <summary>
-        /// lblDepartment control.
+        /// txtFee control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDepartment;
+        protected global::System.Web.UI.WebControls.TextBox txtFee;
 
         /// <summary>
-        /// lblDuration control.
+        /// ddlGradeType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDuration;
+        protected global::System.Web.UI.WebControls.DropDownList ddlGradeType;
 
         /// <summary>
-        /// lblCredits control.
+        /// txtGrade control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCredits;
+        protected global::System.Web.UI.WebControls.TextBox txtGrade;
 
         /// <summary>
-        /// lblCareerOpportunities control.
+        /// btnCheck control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCareerOpportunities;
+        protected global::System.Web.UI.WebControls.Button btnCheck;
 
         /// <summary>
-        /// lblEntryRequirements control.
+        /// lblMessage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEntryRequirements;
-
-        /// <summary>
-        /// lblTuitionFees control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTuitionFees;
-
-        /// <summary>
-        /// btnCompare control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCompare;
+        protected global::System.Web.UI.WebControls.Label lblMessage;
 
         /// <summary>
         /// btnCalc control.
@@ -94,5 +76,23 @@ namespace SEM_Assignment
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnCalc;
+
+        /// <summary>
+        /// lblFinalFee control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblFinalFee;
+
+        /// <summary>
+        /// txtFinalFee control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtFinalFee;
     }
 }

@@ -58,5 +58,13 @@ namespace SEM_Assignment
                 Response.Redirect($"ComparePrograms.aspx?selectedId={programId}");
             }
         }
+        protected void btnCalc_Click(object sender, EventArgs e)
+        {
+            string programId = Request.QueryString["id"];
+            if (!string.IsNullOrEmpty(programId))
+            {
+                Response.Redirect($"FeesCalculator.aspx?selectedId={programId}");
+            }
+        }
     }
 }
