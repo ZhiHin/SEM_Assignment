@@ -101,6 +101,7 @@
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
     <Content Include="ComparePrograms.aspx" />
+    <Content Include="FeesCalculator.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Image\TARUMT_Logo.png" />
     <Content Include="ProgramDetails.aspx" />
@@ -121,6 +122,13 @@
     </Compile>
     <Compile Include="ComparePrograms.aspx.designer.cs">
       <DependentUpon>ComparePrograms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeesCalculator.aspx.cs">
+      <DependentUpon>FeesCalculator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeesCalculator.aspx.designer.cs">
+      <DependentUpon>FeesCalculator.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>

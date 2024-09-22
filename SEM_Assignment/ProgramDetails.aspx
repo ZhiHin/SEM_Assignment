@@ -20,6 +20,7 @@
         <!-- Option to compare this program with others -->
         <div class="mt-6 text-center">
             <asp:Button ID="btnCompare" runat="server" Text="Compare with Other Programs" CssClass="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300" OnClick="btnCompare_Click" />
+            <asp:Button ID="btnCalc" runat="server" Text="Calculate Fees" CssClass="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300" OnClick="btnCalc_Click" />
         </div>
     </div>
 </asp:Content>
