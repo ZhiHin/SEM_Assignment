@@ -46,6 +46,10 @@ namespace SEM_Assignment
                     lblCareerOpportunities.Text = reader["CareerOpportunities"].ToString();
                     lblEntryRequirements.Text = reader["EntryRequirements"].ToString();
                     lblTuitionFees.Text = reader["TuitionFees"].ToString();
+                    lblAdditionalFees.Text = reader["AdditionalFees"] != DBNull.Value ? reader["AdditionalFees"].ToString() : "0.00"; // Handle null case
+                    lblTotalEstimatedCost.Text = reader["TotalEstimatedCost"].ToString();
+                    lblModeOfStudy.Text = reader["ModeOfStudy"].ToString();
+                    lblAccreditation.Text = reader["Accreditation"].ToString();
                 }
             }
         }

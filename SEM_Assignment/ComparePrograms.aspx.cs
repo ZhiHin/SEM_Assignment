@@ -47,6 +47,10 @@ namespace SEM_Assignment
                     lblOriginalCareerOpportunities.Text = reader["CareerOpportunities"].ToString();
                     lblOriginalEntryRequirements.Text = reader["EntryRequirements"].ToString();
                     lblOriginalTuitionFees.Text = reader["TuitionFees"].ToString();
+                    lblOriginalAdditionalFees.Text = reader["AdditionalFees"].ToString(); 
+                    lblOriginalTotalEstimatedCost.Text = reader["TotalEstimatedCost"].ToString(); 
+                    lblOriginalModeOfStudy.Text = reader["ModeOfStudy"].ToString(); 
+                    lblOriginalAccreditation.Text = reader["Accreditation"].ToString(); 
                 }
             }
         }
@@ -117,6 +121,10 @@ namespace SEM_Assignment
                     lblComparisonCareerOpportunities.Text = reader["CareerOpportunities"].ToString();
                     lblComparisonEntryRequirements.Text = reader["EntryRequirements"].ToString();
                     lblComparisonTuitionFees.Text = reader["TuitionFees"].ToString();
+                    lblComparisonAdditionalFees.Text = reader["AdditionalFees"].ToString(); 
+                    lblComparisonTotalEstimatedCost.Text = reader["TotalEstimatedCost"].ToString(); 
+                    lblComparisonModeOfStudy.Text = reader["ModeOfStudy"].ToString(); 
+                    lblComparisonAccreditation.Text = reader["Accreditation"].ToString(); 
                 }
             }
         }
@@ -130,6 +138,10 @@ namespace SEM_Assignment
             lblComparisonCareerOpportunities.Text = "";
             lblComparisonEntryRequirements.Text = "";
             lblComparisonTuitionFees.Text = "";
+            lblComparisonAdditionalFees.Text = ""; 
+            lblComparisonTotalEstimatedCost.Text = ""; 
+            lblComparisonModeOfStudy.Text = ""; 
+            lblComparisonAccreditation.Text = ""; 
         }
 
         protected void btnCompareSelected_Click(object sender, EventArgs e)
@@ -175,6 +187,10 @@ namespace SEM_Assignment
                     programDetails.CareerOpportunities = reader["CareerOpportunities"].ToString();
                     programDetails.EntryRequirements = reader["EntryRequirements"].ToString();
                     programDetails.TuitionFees = reader["TuitionFees"].ToString();
+                    programDetails.AdditionalFees = reader["AdditionalFees"].ToString(); 
+                    programDetails.TotalEstimatedCost = reader["TotalEstimatedCost"].ToString(); 
+                    programDetails.ModeOfStudy = reader["ModeOfStudy"].ToString(); 
+                    programDetails.Accreditation = reader["Accreditation"].ToString(); 
                 }
             }
 
@@ -196,6 +212,10 @@ namespace SEM_Assignment
             AppendComparisonRow(resultHtml, "Career Opportunities", originalProgram.CareerOpportunities, comparisonProgram.CareerOpportunities);
             AppendComparisonRow(resultHtml, "Entry Requirements", originalProgram.EntryRequirements, comparisonProgram.EntryRequirements);
             AppendComparisonRow(resultHtml, "Tuition Fees", originalProgram.TuitionFees, comparisonProgram.TuitionFees);
+            AppendComparisonRow(resultHtml, "Additional Fees", originalProgram.AdditionalFees, comparisonProgram.AdditionalFees); 
+            AppendComparisonRow(resultHtml, "Total Estimated Cost", originalProgram.TotalEstimatedCost, comparisonProgram.TotalEstimatedCost); 
+            AppendComparisonRow(resultHtml, "Mode of Study", originalProgram.ModeOfStudy, comparisonProgram.ModeOfStudy); 
+            AppendComparisonRow(resultHtml, "Accreditation", originalProgram.Accreditation, comparisonProgram.Accreditation); 
 
             resultHtml.Append("</table>");
 
@@ -241,6 +261,10 @@ namespace SEM_Assignment
             public string CareerOpportunities { get; set; }
             public string EntryRequirements { get; set; }
             public string TuitionFees { get; set; }
+            public string AdditionalFees { get; set; } 
+            public string TotalEstimatedCost { get; set; } 
+            public string ModeOfStudy { get; set; } 
+            public string Accreditation { get; set; } 
         }
     }
 }
